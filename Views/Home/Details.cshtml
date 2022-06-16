@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="mt-3 mb-3">Dettagli posts</h1>
+                <a class="btn btn-primary"
+                   href="@Url.Action("Create", "Home")">
+                    Dettagli post
+                </a>
+            </div>
+
+            <table class="js_post_table table post-list-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Immagine</th>
+                        <th>Titolo</th>
+                        <th>Descrizione</th>
+                        <th>Azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>
+                            @Model
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+}

@@ -15,7 +15,7 @@ namespace csharp_blog_frontend.Controllers
         [HttpGet]
         public IActionResult Details(int id)
         {
-            return View();
+            return View(id);
         }
 
         [HttpGet]
@@ -23,7 +23,10 @@ namespace csharp_blog_frontend.Controllers
         {
             return View();
         }
-
+        public IActionResult CreateBlob(int id)
+        {
+            return View(id);
+        }
         //public IActionResult CreateFile()
         //{
         //    return View();
